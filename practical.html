@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Online Store</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  Navbar
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-600">ShopEase</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="hover:text-blue-500">Home</a>
+        <a href="#" class="hover:text-blue-500">Shop</a>
+        <a href="#" class="hover:text-blue-500">Categories</a>
+        <a href="#" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <input type="text" placeholder="Search..." class="hidden md:block border rounded-lg px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <button class="relative">
+          🛒
+          <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-1">3</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  Hero Section
+  <section class="relative bg-cover bg-center h-[500px] mt-16" style="background-image: url('https://source.unsplash.com/1600x900/?shopping,fashion');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+      <div class="text-center text-white px-6">
+        <h2 class="text-4xl md:text-6xl font-bold">Discover Your Style</h2>
+        <p class="mt-4 text-lg">Trendy clothes, gadgets, and more at unbeatable prices!</p>
+        <a href="#shop" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white text-lg font-medium shadow-lg">
+          Shop Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  Categories
+  <section id="categories" class="max-w-7xl mx-auto py-12 px-6">
+    <h3 class="text-2xl font-bold text-center mb-8">Shop by Categories</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <img src="https://source.unsplash.com/200x200/?clothes" alt="Clothes" class="mx-auto rounded-lg mb-4">
+        <h4 class="font-semibold">Clothing</h4>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <img src="https://source.unsplash.com/200x200/?shoes" alt="Shoes" class="mx-auto rounded-lg mb-4">
+        <h4 class="font-semibold">Shoes</h4>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <img src="https://source.unsplash.com/200x200/?electronics" alt="Electronics" class="mx-auto rounded-lg mb-4">
+        <h4 class="font-semibold">Electronics</h4>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <img src="https://source.unsplash.com/200x200/?jewelry" alt="Jewelry" class="mx-auto rounded-lg mb-4">
+        <h4 class="font-semibold">Accessories</h4>
+      </div>
+    </div>
+  </section>
+
+  Featured Products
+  <section id="shop" class="bg-gray-100 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-2xl font-bold text-center mb-8">Featured Products</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        Product Card
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x300/?tshirt" alt="Product" class="rounded-lg mb-4">
+          <h4 class="font-semibold">Casual T-Shirt</h4>
+          <p class="text-blue-600 font-bold">$15.99</p>
+          <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x300/?sneakers" alt="Product" class="rounded-lg mb-4">
+          <h4 class="font-semibold">Sneakers</h4>
+          <p class="text-blue-600 font-bold">$49.99</p>
+          <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x300/?smartphone" alt="Product" class="rounded-lg mb-4">
+          <h4 class="font-semibold">Smartphone</h4>
+          <p class="text-blue-600 font-bold">$299.99</p>
+          <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Add to Cart</button>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/300x300/?watch" alt="Product" class="rounded-lg mb-4">
+          <h4 class="font-semibold">Luxury Watch</h4>
+          <p class="text-blue-600 font-bold">$120.00</p>
+          <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  Footer
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto py-8 px-6 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-600">&copy; 2025 ShopEase. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-blue-500">Facebook</a>
+        <a href="#" class="hover:text-blue-500">Instagram</a>
+        <a href="#" class="hover:text-blue-500">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html> -->
