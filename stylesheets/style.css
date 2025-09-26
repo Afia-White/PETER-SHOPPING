@@ -1,3 +1,4 @@
+/*from header */
     header {
       background: url('/images/summer-904882_1280.jpg') no-repeat center/cover;
       height: 70vh;
@@ -8,7 +9,7 @@
       text-align: center;
       position: relative;
     }
-    
+
     header::after {
       content: '';
       position: absolute;
@@ -44,6 +45,8 @@
       margin-bottom: 20px;
       color: #444;
     }
+    /* end */
+    /* from values */
     .story, .values, .team, .testimonials {
       margin-bottom: 60px;
     }
@@ -53,10 +56,25 @@
       gap: 40px;
     }
 
+    .values h2{
+      color:red;
+      text-decoration: underline;
+    }
+
+    .values-grid2{
+      /* justify-content:space-between; */
+      margin-top:10px;
+    }
+
     .values-grid button{
       border: none;
       color:blue;
       background-color:yellow;
+    }
+
+    .values-grid h3{
+      font-size:15px;
+      color: #009688;
     }
 
     
@@ -66,11 +84,23 @@
       background-color:black;
     }
 
-    .photo-grid > img{
-        height:200px;
+    .values-grid h4{
+      font-size:15px;
+      background-color: #222;
+      color:white;
+    }
+    /* end */
+/* from photo-grid */
+    /* .photo-grid > img{
+      height:160px;
+      width:210px;
     }
 
-
+    .photo-grid button{
+      height:50px;
+      width:100px;
+      margin-top:-90px;
+    } */
 
     .card {
       background: #fff;
@@ -79,32 +109,36 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       text-align: center;
     }
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #009688;
-      color: #fff;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: translate 0.3s ease;
-    }
-    .btn:hover {
-      background: #00796b;
-    }
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-    }
 
-      .guesthouse-footer {
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #009688;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: translate 0.3s ease;
+}
+
+.btn:hover {
+  background: #00796b;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+.guesthouse-footer {
   /* width: 100vw; */
   background: #222; 
   color: #eee;
@@ -133,6 +167,8 @@
 
     @media(max-width:786px){
       .photo-grid > img{
-        width:200px;
+        height:160px;
+        /* gap:10px; */
+        width:210px;
       }
     }

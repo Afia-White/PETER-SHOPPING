@@ -1,0 +1,230 @@
+/*from header */
+    header {
+      background: url('/images/apparel-1850804_1280.jpg') no-repeat center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    header .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #444;
+    }
+    /* end */
+    /* from values */
+    .story, .values, .team, .testimonials {
+      margin-bottom: 60px;
+    }
+    .values-grid, .team-grid, .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 40px;
+    }
+
+    .values-grid{
+        margin-top:10px;
+    }
+
+    .values h2{
+      color:slateblue;
+      text-decoration: underline;
+    }
+
+    .values-grid-3{
+        gap:0;
+        color: blue;
+        margin-top:50px;
+        margin-bottom:100px;
+        height:100px;
+        /* align-items: center; */
+    }
+
+    .card2 h3{
+        color:yellow;
+    }
+
+    /* .values-grid-3 :hover{
+        color:blue;
+    } */
+
+    .values-grid2{
+      /* justify-content:space-between; */
+      margin-top:10px;
+    }
+
+    .values-grid button{
+      border: none;
+      color:blue;
+      background-color:yellow;
+    }
+
+    .values-grid h3{
+      font-size:15px;
+      color: #009688;
+    }
+
+    
+    .values-grid button:hover{
+      border: none;
+      color:white;
+      background-color:black;
+    }
+
+    .values-grid h4{
+      font-size:15px;
+      background-color: #222;
+      color:white;
+    }
+    /* end */
+/* from photo-grid */
+    /* .photo-grid > img{
+      height:160px;
+      width:210px;
+    }
+
+    .photo-grid button{
+      height:50px;
+      width:100px;
+      margin-top:-90px;
+    } */
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #009688;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: translate 0.3s ease;
+}
+
+.btn:hover {
+  background: #00796b;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+.guesthouse-footer {
+  /* width: 100vw; */
+  background: #222; 
+  color: #eee;
+  margin: 0 !important;
+  /* padding: 40px 20px 10px; */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin:0;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  margin: 15px;
+}
+
+.footer-section a{
+  text-decoration: none;
+  display:block;
+  color:white;
+}
+
+    @media(max-width:786px){
+      .photo-grid > img{
+        height:160px;
+        /* gap:10px; */
+        width:210px;
+      }
+
+      .values-grid-3{
+        height:900px;
+        width:200px;
+        margin-top:40px;
+        display:inline-block;
+        margin-left:120px;
+      }
+
+      .values-grid-3 div{
+        margin-top:5px;
+        height:200px;
+        width:200px;
+        font-size:20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:blue;
+        padding:40px;
+      }
+
+      .values-grid2{
+        margin-top:-150px;
+      }
+
+      .download{
+        height:140px;
+        padding:5px;
+      }
+
+      .download7{
+        height:150px;
+      }
+
+      .download8{
+        height:130px;
+      }
+    }
